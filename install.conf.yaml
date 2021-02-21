@@ -1,0 +1,36 @@
+- create:
+    - ~/bin
+    - ~/code/projects
+    - ~/scripts
+    - ~/.config
+    - ~/.dotfiles
+    - ~/.tmp
+
+
+- link:
+    ~/.zshrc.pre-oh-my-zsh: .zshrc.pre-oh-my-zsh
+    ~/.zshrc: .zshrc
+
+    ~/.bashrc: .bashrc
+    ~/.bash_logout: .bash_logout
+    ~/.bash_aliases: .bash_aliases
+
+    ~/.gitconfig: .gitconfig
+    ~/.global_gitignore: .global_gitignore
+
+    ~/.gnupg/gpg.conf: gpg.conf
+    ~/.gnupg/gpg-agent.conf: gpg-agent.conf
+
+    ~/.vimrc: .vimrc
+
+    ~/.tmux/.tmux.conf: .tmux.conf
+    ~/.tmux/.tmux.conf.local: .tmux.conf.local
+
+    ~/.sdkman/etc/config: config
+
+    ~/.profile: .profile
+
+- clean: ['~', '~/.gnupg', ~/.tmux, ~/.sdkman]
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
