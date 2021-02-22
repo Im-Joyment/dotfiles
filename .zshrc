@@ -133,6 +133,16 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+## Custom configure my machine for the connection between GPG and SSH works properly.
+
+# GPG-Agent
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+   export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+fi
+
+ export GPG_TTY=$(tty)
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -142,10 +152,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATHSKRIPT=/home/roman/scripts
-export PATHBIN=/home/roman/bin
-export PATHPROJECT=/home/roman/code/projects
-export PATHDOCUMENT=/home/roman/Documents
+export PATHSKRIPT=$HOME/scripts
+export PATHBIN=$HOME/bin
+export PATHPROJECT=$HOME/Projects
+
 alias backup=$PATHSKRIPT/backup.sh
 
 

@@ -6,6 +6,11 @@
     - ~/.dotfiles
     - ~/.tmp
 
+    - ~/.gnupg
+    - ~/.tmux
+    - ~/.sdkman
+
+
 
 - link:
     ~/.zshrc.pre-oh-my-zsh: .zshrc.pre-oh-my-zsh
