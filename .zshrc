@@ -135,14 +135,6 @@ source $ZSH/oh-my-zsh.sh
 
 ## Custom configure my machine for the connection between GPG and SSH works properly.
 
-# GPG-Agent
-#unset SSH_AGENT_PID
-#if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-#   export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
-#fi
-#
-# export GPG_TTY=$(tty)
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
