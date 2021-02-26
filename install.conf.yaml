@@ -1,14 +1,14 @@
 - create:
     - ~/bin
     - ~/code/projects
+    - ~/scripts
+    
     - ~/.ssh/Ansible
     - ~/.ssh/Git
-    - ~/scripts
     - ~/.config
     - ~/.dotfiles
     - ~/.tmp
     - ~/.ansible
-
     - ~/.gnupg
     - ~/.tmux
     - ~/.sdkman
@@ -42,7 +42,9 @@
 
     ~/.profile: .profile
 
-- clean: ['~', '~/.gnupg', ~/.tmux, ~/.sdkman]
+    ~/.wakatime.cfg: .wakatime.cfg
+
+- clean: ['~', '~/.gnupg', ~/.tmux, ~/.sdkman, ~/.ansible]
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
