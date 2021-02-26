@@ -4,6 +4,17 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$PATH
 # Path to you ZSH config
 export ZSH_CONFIG="$HOME/.config/zsh"
 
+## CUSTOM Env Var
+## 
+if [ -f ~/.variables ]; then
+    . ~/.variables
+fi
+
+## CUSTOM ALIASES
+##
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -143,13 +154,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATHSKRIPT=$HOME/scripts
-export PATHBIN=$HOME/bin
-export PATHPROJECT=$HOME/Projects
-
-alias backup=$PATHSKRIPT/backup.sh
-
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

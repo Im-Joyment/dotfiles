@@ -1,10 +1,13 @@
 - create:
     - ~/bin
     - ~/code/projects
+    - ~/.ssh/Ansible
+    - ~/.ssh/Git
     - ~/scripts
     - ~/.config
     - ~/.dotfiles
     - ~/.tmp
+    - ~/.ansible
 
     - ~/.gnupg
     - ~/.tmux
@@ -13,6 +16,7 @@
 
 
 - link:
+    ~/.sdkman/etc/config: config
     ~/.zshrc.pre-oh-my-zsh: .zshrc.pre-oh-my-zsh
     ~/.zshrc: .zshrc
 
@@ -31,7 +35,10 @@
     ~/.tmux/.tmux.conf: .tmux.conf
     ~/.tmux/.tmux.conf.local: .tmux.conf.local
 
-    ~/.sdkman/etc/config: config
+    ~/.ansible/ansible.cfg: ansible.cfg
+    ~/.ansible/hosts.txt: ansible_hosts.txt
+
+    ~/.zsh_aliases: .zsh_aliases
 
     ~/.profile: .profile
 
