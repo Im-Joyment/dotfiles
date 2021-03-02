@@ -36,7 +36,7 @@
     ~/.tmux/.tmux.conf.local: .tmux.conf.local
 
     ~/.ansible/ansible.cfg: ansible.cfg
-    ~/.ansible/hosts.txt: ansible_hosts.txt
+    ~/.ansible/hosts: ansible_hosts
 
     ~/.zsh_aliases: .zsh_aliases
 
