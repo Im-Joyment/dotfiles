@@ -32,8 +32,8 @@
 
     ~/.vimrc: .vimrc
 
-    ~/.tmux/.tmux.conf: .tmux.conf
-    ~/.tmux/.tmux.conf.local: .tmux.conf.local
+    ~/.tmux.conf: .tmux.conf
+    ~/.tmux.conf.local: .tmux.conf.local
 
     ~/.ansible/ansible.cfg: ansible.cfg
     ~/.ansible/hosts: ansible_hosts
