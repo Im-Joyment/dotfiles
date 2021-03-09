@@ -155,7 +155,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# THIS MUST BE AT HERE FOR virtualenvwrapper SCRIPT FUNCTION WAS BE EXPORTED
+source virtualenvwrapper.sh 
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/roman/.sdkman"
 [[ -s "/home/roman/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.sdkman/bin/sdkman-init.sh"
