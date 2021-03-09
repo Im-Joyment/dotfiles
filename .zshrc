@@ -158,7 +158,7 @@ source $ZSH/oh-my-zsh.sh
 # THIS MUST BE AT HERE FOR virtualenvwrapper SCRIPT FUNCTION WAS BE EXPORTED
 source virtualenvwrapper.sh 
 # for https://github.com/inishchith/autoenv
-source /home/roman/.local/bin/activate.sh
+source ~/.autoenv/activate.sh
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/roman/.sdkman"
 [[ -s "/home/roman/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.sdkman/bin/sdkman-init.sh"
