@@ -16,6 +16,12 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
+## CUSTOM FUNCTIONS
+##
+if [ -f ~/.zsh_custom_functions ]; then
+    . ~/.zsh_custom_functions
+fi
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
