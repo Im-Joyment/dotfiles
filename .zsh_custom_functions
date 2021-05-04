@@ -1,5 +1,5 @@
 
-// checkout brances uses fzf
+# checkout brances uses fzf
 
 fbr() {
   local branches branch
@@ -9,7 +9,7 @@ fbr() {
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
 
-// kill process using fzf
+# kill process using fzf
 
 fkill() {
   local pid
@@ -21,7 +21,7 @@ fkill() {
   fi
 }
 
-// findind npm packages usinf fzf
+# findind npm packages usinf fzf
 
 fnpm() {
     local packages
