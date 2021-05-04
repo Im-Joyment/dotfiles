@@ -1,3 +1,36 @@
 alias backup=$PATHSKRIPT/backup.sh
 
 alias ccat='pygmentize -O style=monokai -f console256 -g'
+
+
+alias ping='ping -c 5'
+
+alias updatey="sudo apt-get --yes"
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
+
+alias path='echo -e ${PATH//:/\\n}'
+
+alias h='history'
+
+alias c='clear'
+
+alias meminfo='free -m -l -t'
+
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+
+ll='ls -la'
+alias l.='ls -d .* --color=auto'
