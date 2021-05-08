@@ -120,6 +120,7 @@ plugins=(
 	## See https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
 	tmux
 	zsh-autosuggestions
+	fzf
 )
 
 # Path to your oh-my-zsh installation.
@@ -169,3 +170,5 @@ source ~/.autoenv/activate.sh
 export SDKMAN_DIR="/home/roman/.sdkman"
 [[ -s "/home/roman/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.sdkman/bin/sdkman-init.sh"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

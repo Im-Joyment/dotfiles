@@ -1,3 +1,4 @@
+#! /bin/bash
 
 # checkout brances uses fzf
 
@@ -29,3 +30,9 @@ fnpm() {
     echo "$packages" &&
     npm i $(echo $packages)
 }
+
+# Change the current directory for a tmux session, which determines
+# the starting dir for new windows/panes:
+function tmux-cwd {
+    tmux command-prompt -I $PWD -P "New session dir:" "attach -c %1"
+ }
