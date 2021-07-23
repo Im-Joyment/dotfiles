@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # Path to you ZSH config
 export ZSH_CONFIG="$HOME/.config/zsh"
@@ -9,6 +9,11 @@ export ZSH_CONFIG="$HOME/.config/zsh"
 if [ -f ~/.variables ]; then
     . ~/.variables
 fi
+
+if [ -f ~/.secure_variables ]; then
+    . ~/.secure_variables
+fi
+
 
 ## CUSTOM ALIASES
 ##
@@ -21,6 +26,11 @@ fi
 if [ -f ~/.zsh_custom_functions ]; then
     . ~/.zsh_custom_functions
 fi
+
+export ZSH_TMUX_AUTOSTART=false
+export ZSH_TMUX_AUTOSTART_ONCE=false
+export ZSH_TMUX_AUTOCONNECT=false
+export ZSH_TMUX_AUTOQUIT=$ZSH_TMUX_AUTOSTART
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -167,8 +177,8 @@ source virtualenvwrapper.sh
 # for https://github.com/inishchith/autoenv
 source ~/.autoenv/activate.sh
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/roman/.sdkman"
-[[ -s "/home/roman/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/roman/.config/.sdkman"
+[[ -s "/home/roman/.config/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.config/.sdkman/bin/sdkman-init.sh"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

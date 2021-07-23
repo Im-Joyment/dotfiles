@@ -45,6 +45,10 @@
 
     ~/.wakatime.cfg: .wakatime.cfg
 
+    ~/.xinitrc: .xinitrc
+
+    ~/.xbindkeysrc: .xbindkeysrc
+
 - clean: ['~', '~/.gnupg', ~/.tmux, ~/.sdkman, ~/.ansible]
 
 - shell:

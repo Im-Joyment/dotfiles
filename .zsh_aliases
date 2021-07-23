@@ -1,4 +1,6 @@
-alias backup=$PATHSKRIPT/backup.sh
+#!/bin/bash
+
+alias backup=$PATHSKRIPT/backup
 
 alias ccat='pygmentize -O style=monokai -f console256 -g'
 
