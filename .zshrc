@@ -181,4 +181,4 @@ export SDKMAN_DIR="/home/roman/.config/.sdkman"
 [[ -s "/home/roman/.config/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.config/.sdkman/bin/sdkman-init.sh"
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.config/.fzf.zsh ] && source ~/.config/.fzf.zsh
