@@ -11,6 +11,17 @@
     ~/.config/ReePass
     ~/.config/JetBrains
     ~/.config/htop
+    ~/.config/vim
+    ~/.config/tmux
+    ~/.config/ssh
+    ~/.config/pgadmin
+    ~/.config/npm
+    ~/.config/mozilla
+    ~/.config/java
+    ~/.config/httpie
+    ~/.config/gnupg
+    ~/.config/autoenv
+    ~/.config/ansible
 
 
     ~/.local
