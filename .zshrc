@@ -177,8 +177,8 @@ source virtualenvwrapper.sh
 # for https://github.com/inishchith/autoenv
 source ~/.autoenv/activate.sh
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/roman/.config/.sdkman"
-[[ -s "/home/roman/.config/.sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.config/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/roman/.config/sdkman"
+[[ -s "/home/roman/.config/sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.config/sdkman/bin/sdkman-init.sh"
 
 
-[ -f ~/.config/.fzf.zsh ] && source ~/.config/.fzf.zsh
+[ -f ~/.config/fzf.zsh ] && source ~/.config/fzf.zsh
