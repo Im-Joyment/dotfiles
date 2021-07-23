@@ -1,7 +1,21 @@
 - create:
-    - ~/bin
-    - ~/code/projects
-    - ~/scripts
+    - ~/projects
+
+    ~/.config
+    ~/.config/sdkman
+    ~/.config/zsh
+    ~/.config/zathura
+    ~/.config/sxhkd
+    ~/.config/Slack
+    ~/.config/Nextcloud
+    ~/.config/ReePass
+    ~/.config/JetBrains
+    ~/.config/htop
+
+
+    ~/.local
+    ~/.local/bin
+    ~/.local/share
     
     - ~/.ssh/Ansible
     - ~/.ssh/Git
