@@ -1,0 +1,59 @@
+#!/bin/sh
+
+# Custom sys vars configuration
+
+export EDITOR=subl
+export BROWSER=firefox
+export TERMINAL=/bin/zsh
+
+## Configs for program
+
+export XDG_CONFIG_HOME=$HOME/.config/
+
+## .wakatime.cfg
+export WAKA_API_KEY=0d79daf7-c177-4458-8683-475aa40bab12
+
+## Pointer to ansible.cfg file (need for correct working)
+export ANSIBLE_CONFIG=$HOME/.ansible/ansible.cfg
+
+## Password from ROOT for Ansible tasks
+export ANSIBLE_BECOME_PASS=Gribovsws1
+
+## Just my own usefull vars
+export PATHSKRIPT=$HOME/.local/bin
+export PATHBIN=$HOME/bin
+
+
+## Tmux
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+# Automatically starts tmux
+export ZSH_TMUX_AUTOSTART=false
+# Set the configuration path
+export ZSH_TMUX_CONFIG=$HOME/.tmux.conf
+
+## virtualenvwrapper
+
+export WORKON_HOME=~/projects/code/python/.virtualenvs
+export PROJECT_HOME=$HOME/projects/code/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
+# autoenv
+# https://github.com/inishchith/autoenv
+# Authorized env files, defaults to ~/.autoenv_authorized
+# export AUTOENV_AUTH_FILE=
+#Name of the .env file, defaults to .env
+export AUTOENV_ENV_FILENAME=.env.run
+# Set this variable to flip the order of .env files executed
+# export AUTOENV_LOWER_FIRST=
+# Name of the .env.leave file, defaults to .env.leave
+export AUTOENV_ENV_LEAVE_FILENAME=.env.stop
+# Set this to a non-null string in order to enable source env when leaving
+#export AUTOENV_ENABLE_LEAVE=
+# Set this variable to silently authorize the initialization of new environments
+#export AUTOENV_ASSUME_YES=
+
+
+# export FZF_DEFAULT_COMMAND=**
+# export FZF_BASE=/usr/share/gocode/src/github.com/junegunn
+export FZF_BASE=~/.fzf
+export FZF_DEFAULT_COMMAND=**

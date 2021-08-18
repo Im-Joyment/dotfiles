@@ -131,6 +131,7 @@ plugins=(
 	tmux
 	zsh-autosuggestions
 	fzf
+	zsh-syntax-highlighting
 )
 
 # Path to your oh-my-zsh installation.
@@ -171,7 +172,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                                            COMMAND HISTORY CONFIGURATION
+#
+# Count of commands which will be save
+export HISTSIZE=10000
+# Count rows which will be save
+export HISTFILESIZE=10000
+# HISTCONTROL - controll how commands list save in zsh_history
+# This var unsave similar command
+#ignorespace — не сохранять строки начинающиеся с символа <пробел>
+#ignoredups — не сохранять строки, совпадающие с последней выполненной командой
+#ignoreboth — использовать обе опции ‘ignorespace’ и ‘ignoredups’
+#erasedups — удалять ВСЕ дубликаты команд с истории
+export HISTCONTROL=ignoreboth:erasedups
 
+# Not save in zsh_history commands ls, ps, history with additions options
+export HISTIGNORE='ls:ps:history*'
+
+PROMPT_COMMAND='history -a'
+
+# Add human redable date time commands in history
+export HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S: '
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # THIS MUST BE AT HERE FOR virtualenvwrapper SCRIPT FUNCTION WAS BE EXPORTED
 source virtualenvwrapper.sh 
 # for https://github.com/inishchith/autoenv
