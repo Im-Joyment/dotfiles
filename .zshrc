@@ -2,9 +2,6 @@
 export PATH=/usr/local/bin:$PATH
 # $HOME/.local/bin - include in .profile
 
-# Enable VI mode in terminal
-set -o vi
-
 # Path to you ZSH config
 export ZSH_CONFIG="$HOME/.config/zsh"
 
@@ -201,10 +198,18 @@ PROMPT_COMMAND='history -a'
 export HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S: '
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Change vimrc path
+export VIMINIT="source ~/.config/vim/vimrc"
+
+
 # THIS MUST BE AT HERE FOR virtualenvwrapper SCRIPT FUNCTION WAS BE EXPORTED
 source virtualenvwrapper.sh 
 # for https://github.com/inishchith/autoenv
 source ~/.autoenv/activate.sh
+
+# Enable VI mode in terminal
+set -o vi
+
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/roman/.config/sdkman"
 [[ -s "/home/roman/.config/sdkman/bin/sdkman-init.sh" ]] && source "/home/roman/.config/sdkman/bin/sdkman-init.sh"
