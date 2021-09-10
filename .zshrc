@@ -1,5 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+# $HOME/.local/bin - include in .profile
+
+# Enable VI mode in terminal
+set -o vi
 
 # Path to you ZSH config
 export ZSH_CONFIG="$HOME/.config/zsh"
